@@ -1,0 +1,28 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+
+#chat_box_select{
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow:auto;
+    position: absolute;
+    text-align: center;
+    background: rgba(217,255,112,1);
+    background: -moz-linear-gradient(top, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(217,255,112,1)), color-stop(100%, rgba(158,234,87,1)));
+    background: -webkit-linear-gradient(top, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    background: -o-linear-gradient(top, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    background: -ms-linear-gradient(top, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    background: linear-gradient(to bottom, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ff70', endColorstr='#9eea57', GradientType=0 );
+    border-color: green;
+    border-style: dotted;
+}
+
+#chat_box_select p {
+    display: inherit;
+}
