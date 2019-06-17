@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Prueba chat</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/room.css" />
+    <script src="/public/js/room.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
+  </head>
+  <body>
+    <div class="row">
+        <ul id="chat" class="column"></ul>
+        <div class="column">
+          <div class="video_box">
+            <video id="local_video" autoplay playsinline></video>
+          </div>
+          <div class="video_box">
+              <video id="remote_video" autoplay playsinline></video>
+            </div>
+        </div>
+    </div>
+    
+    <form action="">
+      <input id="inputChat" autocomplete="off" /><button>Send</button>
+    </form>
+  </body>
+</html>

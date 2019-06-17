@@ -2,18 +2,29 @@
   "name": "socket-chat-example",
   "version": "0.0.1",
   "description": "my first socket.io app",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
+    "start": "nodemon --exec babel-node src/server.js",
+    "build": "babel src --out-dir dist",
+    "serve": "node dist/server.js",
+    "lint": "standard",
+    "lintf": "standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.2",
-    "socket.io": "^2.2.0",
-    "socketio-wildcard": "^2.0.0"
+    "express": "^4.17.1",
+    "socket.io": "^2.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-rc.1",
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/node": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "nodemon": "^1.18.3",
+    "standard": "^12.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/Tlaloc-Es/NodeChat.git"

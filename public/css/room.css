@@ -6,3 +6,36 @@ form button { width: 9%; background: rgb(130, 224, 255); border: none; padding: 
 #messages { list-style-type: none; margin: 0; padding: 0; }
 #messages li { padding: 5px 10px; }
 #messages li:nth-child(odd) { background: #eee; }
+
+.video_box{
+    width: 300px;
+    height: 300px;
+    margin: 10px, 10px, 10px, 10px;
+    background: rgba(217,255,112,1);
+    background: -moz-linear-gradient(top, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(217,255,112,1)), color-stop(100%, rgba(158,234,87,1)));
+    background: -webkit-linear-gradient(top, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    background: -o-linear-gradient(top, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    background: -ms-linear-gradient(top, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    background: linear-gradient(to bottom, rgba(217,255,112,1) 0%, rgba(158,234,87,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9ff70', endColorstr='#9eea57', GradientType=0 );
+    border-color: green;
+    border-style: dotted;
+}
+
+video{
+    width: 300px;
+    height: 300px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    display: block;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
